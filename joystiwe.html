@@ -25,6 +25,8 @@ function init(){
         }
         //event.preventDefault();
     });
+	$(document).keyup(function(event){clearInterval(interval)});
+	$(document).blur(function(event){clearInterval(interval)});
 }
 function stopInterval(){
     clearInterval(interval);
